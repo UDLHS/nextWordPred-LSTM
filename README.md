@@ -1,20 +1,20 @@
 ## Model Description
 
-This repository implements a next-word prediction model using a Long Short-Term Memory (LSTM) neural network architecture. The model is designed for natural language processing (NLP) tasks where the goal is to predict the most likely next word given a sequence of prior words.
+This repository implements a next-word prediction model using a Long Short-Term Memory (LSTM) neural network architecture, built with TensorFlow. The model is designed for natural language processing (NLP) tasks where the goal is to predict the next word in a sequence of text.
 
 ### How it Works
 
 - **Architecture:**  
-  The core of the model is an LSTM layer (or stack of layers) that processes input sequences of words and learns long-term dependencies in textual data. LSTMs are a type of recurrent neural network (RNN) particularly well-suited for language modeling because they can remember information over long sequences.
+  The core of the model is an LSTM layer (or stack of layers) that processes input sequences of words and learns long-term dependencies in textual data. LSTMs are a type of recurrent neural network (RNN), and in this project, they are implemented using TensorFlow's deep learning APIs.
 
 - **Training:**  
-  The model is trained on a corpus of text, learning to predict the next word in sequences. During training, sequences are broken into input (all but last word) and target (the last word) pairs. The model uses these pairs to learn word patterns, grammar, and context.
+  The model is trained on a corpus of text, learning to predict the next word in sequences. During training, sequences are broken into input (all but last word) and target (the last word) pairs. The model uses TensorFlow's optimization and data pipeline features to efficiently process and learn from the data.
 
 - **Prediction:**  
-  After training, the model can take a sequence of words and output a probability distribution over the vocabulary for the most likely next word. This has applications in text generation, auto-completion, and other NLP tasks.
+  After training, the model can take a sequence of words and output a probability distribution over the vocabulary for the most likely next word. This has applications in text generation, auto-completion, and other NLP-related tasks.
 
 - **Customization:**  
-  The architecture and hyperparameters (number of LSTM layers, hidden units, batch size, etc.) can be adjusted for different datasets and requirements. You can swap out the dataset, tune learning rates, or extend the model for more complex tasks.
+  The architecture and hyperparameters (number of LSTM layers, hidden units, batch size, etc.) can be adjusted for different datasets and requirements. You can swap out the dataset, tune learning rate, change the optimizer, and more, all within the TensorFlow framework.
 
 ### Applications
 
@@ -24,5 +24,3 @@ This repository implements a next-word prediction model using a Long Short-Term 
 - Next-word suggestion systems
 
 ---
-
-Feel free to adjust or extend this description based on your specific implementation details, such as the framework used (PyTorch, TensorFlow, etc.), dataset specifics, or any custom layers or features you’ve added.
